@@ -2,29 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport"net content="width=device-width, initial-scale=1.0" />
   <title>Iriventy Uzwal</title>
-  <link rel="stylesheet" href="./css/style.css" />
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"/>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="./css/style.css"/>
+  
 </head>
 <body>
-  <header>
-    <a href="#" class="logo">Iriventy Uzwal</a>
-    <i class="bx bx-menu" id="menu_icon"></i>
-    <nav>
-      <a href="#about" class="">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-  
-  <section class="home" id="about">
+<nav class="navbar">
+  <div class="logo">Iriventy Uzwal</div>
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" class="menu-icon">&#9776;</label>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+<h1 class="about">About</h1>
+<section class="home" id="about">
     <div class="image">
       <img src="./images/passport photo.jpg" alt="Iriventy Uzwal" />
     </div>
     <div class="home-details">
+      <h3>Hello I'm ,</h3>
       <h1>Iriventy Uzwal</h1>
       <h2>Web Developer</h2>
       <p>
@@ -36,7 +42,7 @@
       </p>
       <div class="btn">
         <!-- Hire Me button as mailto link -->
-        <a href="mailto:uzwal14405@gmail.com?subject=Hiring%20Inquiry" class="btn-hire">Hire Me</a>
+        <a href="#contact" class="btn-hire">Hire Me</a>
       </div>
     </div>
   </section>
@@ -114,14 +120,20 @@
       </div>
     </div>
   </section>
-  
+
+
   <section class="contact" id="contact">
   <h2>Contact Me</h2>
-  <div class="contact-info">
-    <p>If you'd like to get in touch, send me a message:</p>
-    <a href="sms:+919908386530?body=Hello%20Iriventy,%20I%20want%20to%20contact%20you" class="btn-hire">Send SMS</a>
-  </div>
+  <form class="contact-form" action="mailto:uzwal14405@gmail.com" method="POST" enctype="text/plain">
+    <input type="text" name="name" placeholder="Enter yourn name" required />
+    <input type="email" name="email" placeholder="Enter your Email" required />
+    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn-hire">Send Message</button>
+  </form>
 </section>
+
+  
+
 <footer>
   <div class="footer-container">
     <p>&copy; 2025 Iriventy Uzwal. All rights reserved.</p>
@@ -132,6 +144,6 @@
   </div>
 </footer>
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
