@@ -19,8 +19,9 @@ html{
   background: linear-gradient(rgb(52, 84, 98), rgb(21, 147, 173), #03375a);
   padding: 0 50px;
   color: white;
-  height: 120px;
-  position: relative;
+  height: 80px;
+  position: fixed ;
+  width: 100%;
   z-index: 10;
 }
 
@@ -110,15 +111,9 @@ html{
   display: none;
 }
 
-.about {
-  text-align: center;
-  padding-top: 60px;
-  /* Removed invalid padding-bottom */
-}
-
 section.home {
   position: relative;
-  top: 0px;
+  top: 100px;
   left: 0;
   width: 100%;
   min-height: unset;        
@@ -279,6 +274,7 @@ section.home {
   justify-content: space-between;
   transition: transform 0.2s;
   position: relative;
+  height: 360px;
 }
 
 .project-card:hover {
@@ -300,7 +296,7 @@ section.home {
 }
 
 .project-link {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 600;
   color: #0b5ed7;
   text-decoration: none;
@@ -309,6 +305,7 @@ section.home {
   border-radius: 50px;
   transition: background-color 0.3s, color 0.3s;
   align-self: flex-start;
+  
 }
 
 .project-link:hover {
@@ -319,7 +316,7 @@ section.home {
 
 .project-card img {
   width: 70%;
-  height: 40%;
+  height: 35%;
 }
 
 .education {
